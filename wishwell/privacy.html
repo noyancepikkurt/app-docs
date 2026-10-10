@@ -21,27 +21,42 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #c8e2a5; fon
 
 <section id="en">
 <h1>Privacy Policy</h1>
-<p><strong>Last updated:</strong> September 6, 2026</p>
+<p><strong>Last updated:</strong> October 10, 2026</p>
 
 <h2>Overview</h2>
-<p>WishWell is a personal, offline wishing-fountain app. We do not collect, store, or transmit any personal information. Everything you write and every coin you toss stays on your device.</p>
+<p>WishWell is a personal wishing-fountain app. It has no accounts, and the text of your wishes is stored on your device; the app does not send it to us or to any of the services described below. The app does include three third-party components: Firebase Analytics (Google) for usage statistics, RevenueCat for purchase records, and — from version 1.4 onward — Meta's measurement SDK, which we use to see whether our own ads for WishWell work. The sections below explain what each of them receives.</p>
 
 <h2>What we don't collect</h2>
 <ul>
-<li>No name, email, phone, or account information.</li>
-<li>No usage analytics or crash reports sent to us.</li>
-<li>No advertising identifiers, no tracking, no third-party SDKs.</li>
-<li>No location, contacts, camera, microphone, or health data.</li>
+<li>No name, email, phone number, or account information — WishWell has no accounts and no sign-in.</li>
+<li>The text of your wishes is not sent to us or to any third party.</li>
+<li>No advertising identifier (IDFA). WishWell does not show the iOS tracking-permission prompt and does not access the advertising identifier.</li>
+<li>The app does not ask for access to your location, contacts, photos, camera, microphone, or health data.</li>
+<li>No ads are shown inside the app.</li>
 </ul>
 
 <h2>Local data</h2>
-<p>Your wishes and their fulfillment status are stored locally on your device using Apple's SwiftData. This data never leaves your device. When you delete the app, the data is deleted with it.</p>
+<p>Your wishes — their text, the date, the price label of the coin you tossed, and whether you marked them as fulfilled — are stored locally on your device using Apple's SwiftData. The app has no server of its own and does not sync your wishes through iCloud. If you have turned on device backups (iCloud Backup or a backup to a computer), Apple may include the app's data in your own backup, according to your device settings. When you delete the app, your wishes are deleted from the device with it. One small marker — that the one-time free wish has been used — is kept in the device keychain and may remain after the app is deleted; it contains no wish content.</p>
+
+<h2>Usage analytics</h2>
+<p>WishWell uses Firebase Analytics (Google) to understand how the app is used. The events we define are two interaction events — a screen or control being shown (<code>ui_impression</code>) and being tapped (<code>ui_click</code>) — with short labels: which screen, which control and, where relevant, which coin tier and a short context (for example whether a coin was free or paid, whether the wish field was empty or filled in, or that a wish was marked as fulfilled). These events never contain the text of a wish.</p>
+<p>In addition, Firebase collects its standard automatic events (such as first open, session start, screen views and app updates) and technical information such as device model, operating system version, app version, language, IP address (from which an approximate region may be derived) and an identifier generated for this installation of the app. WishWell uses the variant of Firebase Analytics that does not include advertising-identifier support. How Google processes this data: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2>In-App Purchases</h2>
 <p>WishWell offers optional in-app purchases (coins) processed by Apple. Apple handles all payment information; we never see your payment details. See <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a> for information about how Apple processes purchases.</p>
+<p>To keep track of sales we use RevenueCat. When a purchase is completed, the app passes Apple's transaction record (such as the product, price, currency and time of purchase) to RevenueCat, where it is stored under a random identifier generated for this installation — not under a name or email, since WishWell has neither. RevenueCat's SDK may also process technical information such as IP address, app version and operating system version. How RevenueCat processes this data: <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>. From version 1.4 onward, Meta's measurement SDK also receives the fact that a purchase was completed — see "Ad measurement" below.</p>
+
+<h2>Ad measurement</h2>
+<p>We may run app-promotion ads for WishWell on Meta (Facebook and Instagram). To see whether those ads work, the app includes Meta Platforms' measurement SDK from version 1.4 onward. What is sent to Meta: that the app was installed and opened, that a first wish was made, and that an in-app purchase was completed (with details such as the product identifier, amount and currency). Technical information is also sent: app version, device model, operating system version, language and region, IP address, the vendor identifier Apple gives only to this developer's apps on your device (IDFV), and an install-specific identifier generated by the SDK.</p>
+<p><strong>The advertising identifier (IDFA) is not collected.</strong> WishWell does not show the iOS tracking-permission prompt and does not access the advertising identifier, so the identifier that is shared across other companies' apps is not passed to Meta. Install attribution relies mainly on <strong>Apple's SKAdNetwork</strong>: Apple produces the report and passes it on as aggregate counts that are not tied to your device or identity.</p>
+<p><strong>What is not sent to Meta:</strong> the text of your wishes, how many wishes you have, which wishes you marked as fulfilled, the screen and tap events described under "Usage analytics", and any name, email or account identifier (WishWell has none). User-ID forwarding and advanced matching are not used, and we attach no extra details of our own to the first-wish event.</p>
+<p>Ad measurement is active only in builds distributed through Apple (the App Store and TestFlight); it is off in development builds. If you want to stay out of ad measurement entirely you can remove the app from your device, or write to us at the address in "Contact". How Meta processes this data: <a href="https://www.facebook.com/privacy/policy">Meta Privacy Policy</a>.</p>
+
+<h2>Deleting your data</h2>
+<p>WishWell has no accounts, so we hold nothing under your name. You can delete individual wishes in the app, and deleting the app removes all wishes stored on the device. The usage, purchase and ad-measurement records described above are held by Google, RevenueCat and Meta; they are not linked to a name, email or account, deleting the app does not remove them, and their retention and deletion are governed by those companies' own processes. If you have a question or a request about them, write to us at the address below and we will help as far as we can.</p>
 
 <h2>Children</h2>
-<p>WishWell does not knowingly collect data from anyone. It is safe for all ages.</p>
+<p>WishWell does not ask anyone, of any age, for a name, email address or other contact details, and we do not knowingly collect personal information from children. The measurement described above works the same way for every user.</p>
 
 <h2>Contact</h2>
 <p>Questions? Email <a href="mailto:cepikkurtnoyan@icloud.com">cepikkurtnoyan@icloud.com</a>.</p>
@@ -51,27 +66,42 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #c8e2a5; fon
 
 <section id="tr">
 <h1>Gizlilik Politikası</h1>
-<p><strong>Son güncelleme:</strong> 6 Eylül 2026</p>
+<p><strong>Son güncelleme:</strong> 10 Ekim 2026</p>
 
 <h2>Genel</h2>
-<p>WishWell kişisel, çevrimdışı bir dilek çeşmesi uygulamasıdır. Hiçbir kişisel bilginizi toplamayız, saklamayız veya iletmeyiz. Yazdığınız her dilek ve attığınız her para cihazınızda kalır.</p>
+<p>WishWell kişisel bir dilek çeşmesi uygulamasıdır. Uygulamada hesap yoktur ve dileklerinizin metni cihazınızda saklanır; uygulama bu metni bize ya da aşağıda anlatılan servislerin hiçbirine göndermez. Bununla birlikte uygulamada üç üçüncü taraf bileşeni bulunur: kullanım istatistikleri için Firebase Analytics (Google), satın alma kayıtları için RevenueCat ve — 1.4 sürümünden itibaren — WishWell için verdiğimiz kendi reklamlarımızın işe yarayıp yaramadığını görmek için kullandığımız Meta ölçüm SDK'sı. Aşağıdaki bölümler her birinin neleri aldığını açıklar.</p>
 
 <h2>Toplamadığımız veriler</h2>
 <ul>
-<li>Ad, e-posta, telefon veya hesap bilgisi yok.</li>
-<li>Bize gönderilen kullanım analizi veya çökme raporu yok.</li>
-<li>Reklam tanımlayıcısı yok, takip yok, 3. taraf SDK yok.</li>
-<li>Konum, rehber, kamera, mikrofon veya sağlık verisi yok.</li>
+<li>Ad, e-posta, telefon numarası veya hesap bilgisi yok — WishWell'de hesap da giriş de yoktur.</li>
+<li>Dileklerinizin metni bize ya da herhangi bir üçüncü tarafa gönderilmez.</li>
+<li>Reklam kimliği (IDFA) yok. WishWell iOS'un izleme izni penceresini göstermez ve reklam kimliğine erişmez.</li>
+<li>Uygulama konumunuza, rehberinize, fotoğraflarınıza, kameranıza, mikrofonunuza veya sağlık verilerinize erişim istemez.</li>
+<li>Uygulamanın içinde reklam gösterilmez.</li>
 </ul>
 
 <h2>Yerel veri</h2>
-<p>Dilekleriniz ve gerçekleşme durumları, Apple'ın SwiftData'sı kullanılarak yalnızca cihazınızda saklanır. Bu veri cihazınızdan asla çıkmaz. Uygulamayı sildiğinizde veri de silinir.</p>
+<p>Dilekleriniz — metinleri, tarihleri, attığınız paranın fiyat etiketi ve "gerçekleşti" olarak işaretleyip işaretlemediğiniz — Apple'ın SwiftData'sı kullanılarak cihazınızda saklanır. Uygulamanın kendine ait bir sunucusu yoktur ve dileklerinizi iCloud üzerinden eşitlemez. Cihaz yedeklemesini (iCloud Yedekleme ya da bilgisayara yedekleme) açtıysanız Apple, cihaz ayarlarınıza göre uygulamanın verilerini sizin yedeğinize dahil edebilir. Uygulamayı sildiğinizde dilekleriniz de cihazdan silinir. Küçük bir işaret — bir kerelik ücretsiz dilek hakkının kullanıldığı bilgisi — cihazın anahtar zincirinde tutulur ve uygulama silindikten sonra da kalabilir; dilek içeriği taşımaz.</p>
+
+<h2>Kullanım analitiği</h2>
+<p>WishWell, uygulamanın nasıl kullanıldığını anlamak için Firebase Analytics (Google) kullanır. Bizim tanımladığımız olaylar iki etkileşim olayıdır — bir ekranın ya da düğmenin gösterilmesi (<code>ui_impression</code>) ve ona dokunulması (<code>ui_click</code>) — ve kısa etiketler taşır: hangi ekran, hangi öğe ve yeri geldiğinde hangi para kademesi ile kısa bir bağlam (örneğin paranın ücretsiz mi ücretli mi olduğu, dilek alanının boş mu dolu mu olduğu ya da bir dileğin "gerçekleşti" olarak işaretlendiği). Bu olaylar dilek metnini hiçbir zaman içermez.</p>
+<p>Bunlara ek olarak Firebase kendi standart otomatik olaylarını (ilk açılış, oturum başlangıcı, ekran görüntülemeleri ve uygulama güncellemesi gibi) ve cihaz modeli, işletim sistemi sürümü, uygulama sürümü, dil, IP adresi (buradan yaklaşık bir bölge çıkarılabilir) ve uygulamanın bu kurulumu için üretilen bir kimlik gibi teknik bilgileri toplar. WishWell, Firebase Analytics'in reklam kimliği desteği içermeyen sürümünü kullanır. Google'ın bu verileri nasıl işlediği: <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>.</p>
 
 <h2>Uygulama İçi Satın Almalar</h2>
 <p>WishWell, Apple tarafından işlenen isteğe bağlı uygulama içi satın almalar (paralar) sunar. Tüm ödeme bilgilerini Apple yönetir; ödeme detaylarınızı hiçbir zaman görmeyiz. Apple'ın satın alma işlemlerini nasıl işlediğine dair bilgi için <a href="https://www.apple.com/legal/privacy/">Apple Gizlilik Politikası</a>'na bakın.</p>
+<p>Satışları takip etmek için RevenueCat kullanırız. Bir satın alma tamamlandığında uygulama, Apple'ın işlem kaydını (ürün, fiyat, para birimi ve satın alma zamanı gibi) RevenueCat'e iletir; bu kayıt bir ad ya da e-postaya değil — WishWell'de ikisi de yoktur — bu kurulum için üretilen rastgele bir kimliğe bağlı olarak saklanır. RevenueCat'in SDK'sı IP adresi, uygulama sürümü ve işletim sistemi sürümü gibi teknik bilgileri de işleyebilir. RevenueCat'in bu verileri nasıl işlediği: <a href="https://www.revenuecat.com/privacy">RevenueCat Gizlilik Politikası</a>. 1.4 sürümünden itibaren Meta'nın ölçüm SDK'sı da bir satın almanın tamamlandığı bilgisini alır — aşağıdaki "Reklam ölçümü" bölümüne bakabilirsiniz.</p>
+
+<h2>Reklam ölçümü</h2>
+<p>WishWell'i tanıtmak için Meta (Facebook ve Instagram) üzerinde uygulama tanıtım reklamı verebiliriz. Bu reklamların işe yarayıp yaramadığını görmek için uygulamada 1.4 sürümünden itibaren Meta Platforms'un ölçüm SDK'sı bulunur. Meta'ya iletilenler: uygulamanın yüklendiği ve açıldığı bilgisi, ilk dileğin tutulduğu bilgisi ve bir uygulama içi satın almanın tamamlandığı bilgisi (ürün kimliği, tutar ve para birimi gibi ayrıntılarla). Ayrıca teknik bilgiler de iletilir: uygulama sürümü, cihaz modeli, işletim sistemi sürümü, dil ve bölge ayarı, IP adresi, Apple'ın cihazınızda yalnız bu geliştiricinin uygulamalarına verdiği satıcı kimliği (IDFV) ve SDK'nın ürettiği kuruluma özel bir kimlik.</p>
+<p><strong>Reklam kimliği (IDFA) toplanmaz.</strong> WishWell iOS'un izleme izni penceresini göstermez ve reklam kimliğine erişmez; bu nedenle farklı şirketlerin uygulamaları arasında ortak olan bu kimlik Meta'ya iletilmez. Yükleme atfı ağırlıklı olarak <strong>Apple'ın SKAdNetwork</strong> sistemiyle yapılır: raporu Apple üretir ve cihazınıza ya da kimliğinize bağlı olmayan toplu sayılar hâlinde iletir.</p>
+<p><strong>Meta'ya iletilmeyenler:</strong> dileklerinizin metni, kaç dileğiniz olduğu, hangi dilekleri "gerçekleşti" olarak işaretlediğiniz, "Kullanım analitiği" bölümünde anlatılan ekran ve dokunma olayları ve herhangi bir ad, e-posta veya hesap kimliği (WishWell'de bunlar yoktur). Kullanıcı kimliği gönderimi ve gelişmiş eşleştirme (advanced matching) kullanılmaz; ilk dilek olayına kendimiz ek bir ayrıntı eklemeyiz.</p>
+<p>Reklam ölçümü yalnız Apple üzerinden dağıtılan sürümlerde (App Store ve TestFlight) etkindir; geliştirme derlemelerinde kapalıdır. Reklam ölçümünün tamamen dışında kalmak isterseniz uygulamayı cihazınızdan kaldırabilir ya da "İletişim" bölümündeki adrese yazabilirsiniz. Meta'nın bu verileri nasıl işlediği: <a href="https://www.facebook.com/privacy/policy">Meta Gizlilik Politikası</a>.</p>
+
+<h2>Verilerinizi silme</h2>
+<p>WishWell'de hesap olmadığı için adınıza tuttuğumuz bir kayıt yoktur. Dilekleri uygulamanın içinden tek tek silebilirsiniz; uygulamayı silmek de cihazda saklanan bütün dilekleri kaldırır. Yukarıda anlatılan kullanım, satın alma ve reklam ölçümü kayıtları Google, RevenueCat ve Meta tarafından tutulur; bir ada, e-postaya ya da hesaba bağlı değildir, uygulamayı silmek bu kayıtları silmez, saklanmaları ve silinmeleri bu şirketlerin kendi süreçlerine tabidir. Bunlarla ilgili bir sorunuz ya da talebiniz olursa aşağıdaki adrese yazın; elimizden geldiğince yardımcı oluruz.</p>
 
 <h2>Çocuklar</h2>
-<p>WishWell hiç kimseden bilerek veri toplamaz. Tüm yaşlar için güvenlidir.</p>
+<p>WishWell hiçbir yaştan hiç kimseden ad, e-posta adresi ya da başka bir iletişim bilgisi istemez ve çocuklardan bilerek kişisel bilgi toplamayız. Yukarıda anlatılan ölçüm her kullanıcı için aynı şekilde çalışır.</p>
 
 <h2>İletişim</h2>
 <p>Sorular için: <a href="mailto:cepikkurtnoyan@icloud.com">cepikkurtnoyan@icloud.com</a></p>
