@@ -20,7 +20,7 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #f2c94c; fon
 <div class="lang"><a href="#en">English</a> · <a href="#tr">Türkçe</a></div>
 <section id="en">
 <h1>Privacy Policy</h1>
-<p><strong>Last updated:</strong> September 15, 2026</p>
+<p><strong>Last updated:</strong> October 10, 2026</p>
 <h2>Overview</h2>
 <p>Kiko is a voice-based language practice app. You talk with the Kiko mascot and it answers by voice. This policy explains what data is processed and why.</p>
 <h2>Voice audio</h2>
@@ -30,11 +30,16 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #f2c94c; fon
 <h2>Account</h2>
 <p>Kiko uses anonymous authentication — no e-mail, no password. Your data is tied to a device-generated anonymous ID.</p>
 <h2>Diagnostics &amp; analytics</h2>
-<p>We use Firebase Analytics and Crashlytics to understand feature usage (e.g. which screens are opened) and to fix crashes. These events contain no conversation content and no personal identifiers beyond standard app-instance identifiers. We do not track you across other companies' apps or websites (no ATT tracking).</p>
+<p>We use Firebase Analytics and Crashlytics to understand feature usage (e.g. which screens are opened) and to fix crashes. These events contain no conversation content and no personal identifiers beyond standard app-instance identifiers. Kiko never asks for the iOS tracking permission and never reads your advertising identifier (IDFA). Kiko does include Meta's measurement SDK so we can tell whether our own ads for Kiko work — see "Ad measurement" below.</p>
+<h2>Ad measurement</h2>
+<p>We may run app-promotion ads for Kiko on Meta (Facebook and Instagram). To tell whether those ads actually work, Kiko includes Meta Platforms' measurement SDK. What is sent to Meta: that you installed and opened the app, that you finished the first-time setup steps, that you completed your first conversation with Kiko, and — if you subscribe — that a purchase happened, with its amount and currency. Technical information is also sent: app version, device model, OS version, language and region, IP address, the vendor identifier Apple gives only to this app (IDFV), and an anonymous install-specific identifier.</p>
+<p><strong>Your advertising identifier (IDFA) is never collected.</strong> Kiko does not show the iOS tracking-permission prompt and never accesses the advertising identifier, so the identifier that is shared across other companies' apps is not passed to Meta. Install attribution relies mainly on <strong>Apple's SKAdNetwork</strong>: Apple produces the report and passes it on as aggregate counts that cannot be tied to your device or identity. On Meta's side only aggregated event measurement is used.</p>
+<p><strong>What is never sent to Meta:</strong> your name, your account ID, the language or accent you are learning, your CEFR level, your word list, anything you say, any transcript or translation, your practice minutes, and the names of the screens you visit. User-ID forwarding and advanced matching are turned off, and no extra parameters are attached to the setup and first-conversation events.</p>
+<p>Collection happens only in builds distributed through Apple (the App Store and TestFlight); it is off in development builds. If you want to stay out of ad measurement entirely you can remove the app from your device, or write to us at the address in "Contact". How Meta processes this data: <a href="https://www.facebook.com/privacy/policy">Meta Privacy Policy</a>.</p>
 <h2>Subscriptions</h2>
-<p>Kiko Premium subscriptions are processed by Apple. We use RevenueCat to validate purchases; RevenueCat receives your anonymous account ID and purchase receipts, never your payment details.</p>
+<p>Kiko Premium subscriptions are processed by Apple. We use RevenueCat to validate purchases; RevenueCat receives your anonymous account ID and purchase receipts, never your payment details. When you subscribe, Meta's measurement SDK also receives the fact that a purchase happened, with its amount and currency, but never your account ID or your payment details.</p>
 <h2>Data deletion</h2>
-<p>You can reset your account from Account → Reset account. To request full deletion of stored data, e-mail us at the address below with the request; we will delete the associated records.</p>
+<p>You can reset your account from Account → Reset account. To request full deletion of stored data, e-mail us at the address below with the request; we will delete the associated records. Ad-measurement records sent to Meta are not linked to your Kiko account and contain no advertising identifier; resetting your account does not remove them, and their retention and deletion are governed by Meta's own processes.</p>
 <h2>Children</h2>
 <p>Kiko is not directed to or marketed at children. We do not knowingly collect personal information from children; the only personal inputs are a first name and voice audio used solely to run the conversation. If you believe a child has provided personal information, contact us and we will delete it.</p>
 <h2>Contact</h2>
@@ -42,7 +47,7 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #f2c94c; fon
 </section>
 <section id="tr">
 <h1>Gizlilik Politikası</h1>
-<p><strong>Son güncelleme:</strong> 15 Eylül 2026</p>
+<p><strong>Son güncelleme:</strong> 10 Ekim 2026</p>
 <h2>Genel bakış</h2>
 <p>Kiko, sesli konuşarak dil pratiği yaptıran bir uygulamadır. Bu politika hangi verilerin neden işlendiğini açıklar.</p>
 <h2>Ses verisi</h2>
@@ -52,11 +57,16 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #f2c94c; fon
 <h2>Hesap</h2>
 <p>Kiko anonim kimlik doğrulama kullanır — e-posta ve şifre yoktur. Verileriniz cihazınızda üretilen anonim bir kimliğe bağlıdır.</p>
 <h2>Tanılama ve analitik</h2>
-<p>Özellik kullanımını anlamak ve çökmeleri düzeltmek için Firebase Analytics ile Crashlytics kullanırız. Bu olaylar sohbet içeriği taşımaz. Sizi başka şirketlerin uygulamaları/siteleri arasında takip etmeyiz (ATT takibi yok).</p>
+<p>Özellik kullanımını anlamak ve çökmeleri düzeltmek için Firebase Analytics ile Crashlytics kullanırız. Bu olaylar sohbet içeriği taşımaz ve standart uygulama örneği kimlikleri dışında kişisel tanımlayıcı içermez. Kiko iOS'un izleme izni penceresini hiç göstermez ve reklam kimliğinize (IDFA) hiç erişmez. Buna karşılık, Kiko'yu tanıtan kendi reklamlarımızın işe yarayıp yaramadığını ölçmek için uygulamada Meta'nın ölçüm SDK'sı bulunur — aşağıdaki "Reklam ölçümü" bölümüne bakabilirsiniz.</p>
+<h2>Reklam ölçümü</h2>
+<p>Kiko'yu tanıtmak için Meta (Facebook ve Instagram) üzerinde uygulama tanıtım reklamı verebiliriz. Bu reklamların işe yarayıp yaramadığını ölçmek için uygulamada Meta Platforms'un ölçüm SDK'sı bulunur. Meta'ya iletilenler: uygulamayı yüklediğiniz ve açtığınız bilgisi, ilk kurulum adımlarını tamamladığınız bilgisi, Kiko ile ilk sohbetinizi tamamladığınız bilgisi ve abone olursanız bir satın alma gerçekleştiği bilgisi (tutarı ve para birimiyle). Ayrıca teknik bilgiler de iletilir: uygulama sürümü, cihaz modeli, işletim sistemi sürümü, dil ve bölge ayarı, IP adresi, Apple'ın yalnız bu uygulamaya verdiği satıcı kimliği (IDFV) ve kuruluma özel anonim bir kimlik.</p>
+<p><strong>Reklam kimliğiniz (IDFA) hiç toplanmaz.</strong> Kiko iOS'un izleme izni penceresini göstermez ve reklam kimliğine hiç erişmez; bu nedenle farklı şirketlerin uygulamaları arasında ortak olan bu kimlik Meta'ya iletilmez. Yükleme atfı ağırlıklı olarak <strong>Apple'ın SKAdNetwork</strong> sistemiyle yapılır: raporu Apple üretir ve cihazınıza ya da kimliğinize bağlanamayan toplu sayılar hâlinde iletir. Meta tarafında da yalnız toplulaştırılmış olay ölçümü kullanılır.</p>
+<p><strong>Meta'ya asla iletilmeyenler:</strong> adınız, hesap kimliğiniz, öğrendiğiniz dil ve aksan, CEFR seviyeniz, kelime listeniz, söyledikleriniz, konuşma dökümleri ve çeviriler, pratik süreniz ve uygulama içinde gezdiğiniz ekranların adları. Kullanıcı kimliği gönderimi ve gelişmiş eşleştirme (advanced matching) kapalıdır; kurulum ve ilk sohbet olaylarına ek parametre eklenmez.</p>
+<p>Toplama yalnız Apple üzerinden dağıtılan sürümlerde (App Store ve TestFlight) yapılır; geliştirme derlemelerinde kapalıdır. Reklam ölçümünün tamamen dışında kalmak isterseniz uygulamayı cihazınızdan kaldırabilir ya da "İletişim" bölümündeki adrese yazabilirsiniz. Meta'nın bu verileri nasıl işlediği: <a href="https://www.facebook.com/privacy/policy">Meta Gizlilik Politikası</a>.</p>
 <h2>Abonelikler</h2>
-<p>Kiko Premium abonelikleri Apple tarafından işlenir. Satın alma doğrulaması için RevenueCat kullanılır; RevenueCat anonim hesap kimliğinizi ve satın alma makbuzlarını alır, ödeme bilgilerinizi asla görmez.</p>
+<p>Kiko Premium abonelikleri Apple tarafından işlenir. Satın alma doğrulaması için RevenueCat kullanılır; RevenueCat anonim hesap kimliğinizi ve satın alma makbuzlarını alır, ödeme bilgilerinizi asla görmez. Abone olduğunuzda Meta'nın ölçüm SDK'sı da bir satın alma gerçekleştiği bilgisini, tutarı ve para birimiyle alır; hesap kimliğiniz ve ödeme bilgileriniz gönderilmez.</p>
 <h2>Veri silme</h2>
-<p>Hesabım → Hesabı sıfırla ile hesabınızı sıfırlayabilirsiniz. Saklanan verilerin tamamen silinmesi için aşağıdaki adrese e-posta göndermeniz yeterlidir; ilgili kayıtları sileriz.</p>
+<p>Hesabım → Hesabı sıfırla ile hesabınızı sıfırlayabilirsiniz. Saklanan verilerin tamamen silinmesi için aşağıdaki adrese e-posta göndermeniz yeterlidir; ilgili kayıtları sileriz. Meta'ya iletilen reklam ölçümü kayıtları Kiko hesabınızla ilişkilendirilmez ve reklam kimliği içermez; hesabınızı sıfırlamak bu kayıtları silmez, saklanmaları ve silinmeleri Meta'nın kendi süreçlerine tabidir.</p>
 <h2>Çocuklar</h2>
 <p>Kiko çocuklara yönelik değildir ve çocuklara pazarlanmaz. Çocuklardan bilerek kişisel bilgi toplamayız; tek kişisel girdiler, yalnızca sohbeti yürütmek için kullanılan ad ve ses verisidir. Bir çocuğun kişisel bilgi paylaştığını düşünüyorsanız bize yazın, sileriz.</p>
 <h2>İletişim</h2>
